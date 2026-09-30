@@ -1,0 +1,27 @@
+# Credentials and local configuration
+.env*
+!.env.example
+**/.env*
+!**/.env.example
+*.pem
+*.key
+.vercel/
+**/.vercel/
+**/supabase/.temp/
+**/supabase/.branches/
+
+# Dependencies, generated files and local captures
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+*.tsbuildinfo
+next-env.d.ts
+**/next-env.d.ts
+coverage/
+output/
+videos/
+.playwright-cli/
+*.log
+.DS_Store
+__pycache__/
