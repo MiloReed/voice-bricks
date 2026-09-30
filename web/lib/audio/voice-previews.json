@@ -1,0 +1,42 @@
+{
+  "warm": {
+    "text": "各位晚上好，冰箱刚刚宣布，夜宵需要竞聘上岗。",
+    "vuiId": "jingcheng",
+    "url": "/audio/previews/warm-30d9fee7267a3e5e.mp3"
+  },
+  "bright": {
+    "text": "好消息，今天全员放假！坏消息，这是老板的梦话。",
+    "vuiId": "qingyan",
+    "url": "/audio/previews/bright-aebcd34c9a029d42.mp3"
+  },
+  "deep": {
+    "text": "这家公司的命运，由我决定。先问问食堂今天吃什么。",
+    "vuiId": "jingyuan",
+    "url": "/audio/previews/deep-5bc708810627cafc.mp3"
+  },
+  "cheerful": {
+    "text": "恭喜你获得今日幸运大奖，帮全群取一下外卖！",
+    "vuiId": "nianan",
+    "url": "/audio/previews/cheerful-5a713672e9d62984.mp3"
+  },
+  "dramatic": {
+    "text": "最后三秒！他冲向了冰箱！漂亮，抢到了最后一块蛋糕！",
+    "vuiId": "linhao",
+    "url": "/audio/previews/dramatic-e2ef0345dddbe3fa.mp3"
+  },
+  "playful": {
+    "text": "俺老孙一个筋斗十万八千里，还是没赶上早高峰！",
+    "vuiId": "wukong",
+    "url": "/audio/previews/playful-cb1bba816bc77fe9.mp3"
+  },
+  "bajie": {
+    "text": "师父，妖怪可以明天再打，这顿自助可不能白交钱啊。",
+    "vuiId": "bajie",
+    "url": "/audio/previews/bajie-fbdbaeacd6fc3237.mp3"
+  },
+  "linzi": {
+    "text": "你可拉倒吧，说好出来散步，咋又走到烧烤摊了呢？",
+    "vuiId": "linzi",
+    "url": "/audio/previews/linzi-4e23b6677f64a166.mp3"
+  }
+}
