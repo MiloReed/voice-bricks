@@ -6,29 +6,30 @@
 
 ![Voice Bricks game interface](docs/assets/game-preview.jpg)
 
-Voice Bricks is a story-relay game built with Codex. Each sentence becomes a playable, movable “voice brick.” Arrange the bricks into a story and let a shared voice read it aloud.
+Voice Bricks is a story-relay game for friends. Take turns adding a sentence, piece the story together, and hear AI read it aloud.
 
-Play with friends, or take turns with two AI partners. There are no quiz answers or scores for correctness: the fun is finding out where the next sentence takes the story.
+Follow the plot, or write separately and reveal everyone’s ideas at the end. Playing solo? Two AI partners will join you. You never know where the next sentence will take the story.
 
 ## How to play
 
 1. Choose a theme and voice. Invite friends to a room, or start a solo game.
-2. Take turns adding a sentence. In solo mode, you and two AI partners contribute two rounds each, making six bricks.
-3. Preview individual bricks, reorder them, and use the final opportunity to revise a sentence.
+2. Add a sentence. Each one becomes a voice brick you can play back.
+3. Listen, reorder the bricks, and make a final revision to the story.
 4. Generate the finished audio, listen to the story, and download a poster to share.
 
 Multiplayer supports 2–5 people: **Classic** lets players read the preceding story; **Chaos** combines sentences written independently.
 
-## Features
+## Ways to play
 
-- **Solo AI story relay:** DeepSeek receives the full story. One partner moves the plot forward; the other adds a twist. Failed replies can be retried without losing progress.
-- **Realtime multiplayer rooms:** room codes, ready states, turns and assembly synchronized through Supabase.
-- **Eight Chinese voices:** bundled preview recordings, with custom speech generated through VUI.
-- **Story assembly:** individual previews, drag-and-drop reordering, final revision and full playback.
-- **Mobile layout and audio feedback:** browser-generated music and interaction sounds, enabled by the player.
-- **Sharing:** 1080 × 1350 posters; multiplayer works also offer public work pages and portrait-video export in compatible browsers.
+- **Play with friends:** 2–5 players share a room, taking turns or writing independently.
+- **Play solo:** two AI partners help build the story and add unexpected twists.
+- **Hear your story:** choose from eight Chinese voices, preview each brick, and play the finished story.
+- **Share what you made:** download a story poster; multiplayer stories also support shareable links and portrait-video export.
+- **Play on your phone:** mobile controls, background music and game sounds.
 
-The game UI and voice content are currently in Chinese. This English README documents development; it does not imply an English game interface. Solo progress lives in the current browser session: posters can be downloaded, but solo works do not provide public cross-device work pages or video export.
+## Development
+
+The game is currently in Chinese. Solo progress is stored in the current browser session. Video export depends on browser compatibility.
 
 ## Run locally
 
@@ -76,8 +77,6 @@ For local Supabase, install Docker and run `npx supabase start --workdir backend
 
 Get keys from your own [DeepSeek](https://platform.deepseek.com/) and [VUI](https://vuilabs.cn/) accounts. You are responsible for enabling those services and their usage costs. See the [VUI API documentation](https://doc.vuilabs.cn/guides/quickstart/). Restart the development server after changing `.env.local`.
 
-The game uses VUI system voices; no voice-model weights are included. A Fish Audio adapter remains for legacy compatibility, but `FISH_API_KEY` is not required by the current game.
-
 ## Deploy to Vercel
 
 1. Fork or import this repository and set **Root Directory to `web`**.
@@ -121,8 +120,6 @@ After configuring the services and starting the server, `node scripts/check-http
 
 Issues and PRs are welcome. Include your browser and reproduction steps; remove personal data from screenshots and never include keys.
 
-## Scope and license
+## License
 
 Original game code is released under the [MIT License](LICENSE). Dependencies retain their own licenses. Provider voices and API services are not licensed by this repository; see [third-party notices](THIRD_PARTY_NOTICES.md).
-
-This repository includes the current Voice Bricks game, database migrations and required sample audio. It excludes local secrets, deployment-account configuration, user data, the retired English module, private recordings and the separate demo-video editing project.
